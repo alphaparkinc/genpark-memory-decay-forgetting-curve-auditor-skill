@@ -1,0 +1,37 @@
+{
+  "name": "genpark-memory-decay-forgetting-curve-auditor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Ebbinghaus forgetting curve auditor calculating retention probabilities and executing garbage collection on stale memory facts.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "agent-memory",
+  "tags": [
+    "forgetting-curve",
+    "memory-decay",
+    "garbage-collection",
+    "long-term-memory",
+    "agent-persistence"
+  ],
+  "inputs": {
+    "user_id": {
+      "type": "string",
+      "default": "usr_sarah_connor"
+    }
+  },
+  "outputs": {
+    "audit_id": {
+      "type": "string"
+    },
+    "stale_facts_flagged_count": {
+      "type": "integer"
+    },
+    "garbage_collection_ratio": {
+      "type": "string"
+    },
+    "recommended_gc_action": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
